@@ -4,8 +4,7 @@
         <meta charset="UTF-8">
         <title>My CV</title>
         <link rel="stylesheet" href="styles.css"></link>
-        <script src="script.js"></script>
-        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="script.js" defer></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@450&family=Cultive+Mono:wght@400&family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">   
@@ -26,10 +25,10 @@
 
     </head>
     <body>
-        <header class="fixed top-0 left-0 right-0 z-50 transition-transform duration-300 translate-y-0">
+        <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-transform duration-300 translate-y-0">
             <div class="mx-auto flex items-center justify-between p-4 background-dark shadow-md">
                 <a>
-                    <img src="profile.jpg" alt="Logo">
+                    <img src="logo.jpg" alt="Logo">
                 </a>
                 <div class="flex items-center gap-8">
                     <a>About Me</a>
@@ -44,15 +43,33 @@
             <section>
                 <h1 class="font-family-roboto grid place-items-center h-screen text-6xl font-bold">Welcome to my Portfolio!</h1>
             </section>
-            <section class="h-screen">
-                <div class=" flex flex-col items-left justify-center gap-8 p-8">
-                    <h1 class="font-family-roboto text-6xl font-bold">About Me</h1>
+            <section class="h-screen bg-[#F5F5F5]">
                 <div>
-
+                    <div class=" flex flex-col items-left justify-center gap-8 p-8">
+                        <h1 class="font-family-roboto text-6xl font-bold">About Me</h1>
+                    </div>
+                    <div class="grid grid-cols-2 items-left justify-center gap-12 p-8">
+                        <div>
+                            <img src="profile.jpg" alt="Profile Picture" class="rounded-full w-64 h-64 object-cover bg-[#E5E4E2] p-3 rounded-lg shadow-md">
+                        </div>
+                        <div  class="flex flex-col items-left justify-center gap-8">
+                            <div id="targeta1" class="bg-[#E5E4E2] p-8 rounded-lg shadow-md">
+                                <h2>Skill 1</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit urna lectus, ornare vel odio eros luctus neque vulputate suscipit, parturient nisl quis himenaeos sociis laoreet auctor semper. Porttitor montes nec a class vulputate penatibus nibh, sociis himenaeos enim quam conubia vehicula, facilisi habitasse cubilia scelerisque tincidunt rutrum. Ut condimentum auctor himenaeos ullamcorper etiam nostra natoque nunc integer ante, sagittis laoreet conubia inceptos mollis magnis felis dapibus potenti at sociis, aptent porttitor viverra metus habitasse quam duis tempor praesent. Aptent parturient viverra per interdum curae est libero conubia integer risus eros, suspendisse dictumst vehicula lectus porta penatibus fusce himenaeos sapien nostra.</p>
+                            </div>
+                            <div id="targeta2" class="bg-[#E5E4E2] p-8 rounded-lg shadow-md">
+                                <h2>Skill 2</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit urna lectus, ornare vel odio eros luctus neque vulputate suscipit, parturient nisl quis himenaeos sociis laoreet auctor semper. Porttitor montes nec a class vulputate penatibus nibh, sociis himenaeos enim quam conubia vehicula, facilisi habitasse cubilia scelerisque tincidunt rutrum. Ut condimentum auctor himenaeos ullamcorper etiam nostra natoque nunc integer ante, sagittis laoreet conubia inceptos mollis magnis felis dapibus potenti at sociis, aptent porttitor viverra metus habitasse quam duis tempor praesent. Aptent parturient viverra per interdum curae est libero conubia integer risus eros, suspendisse dictumst vehicula lectus porta penatibus fusce himenaeos sapien nostra.</p>
+                            </div>
+                            <div id="targeta3" class="bg-[#E5E4E2] p-8 rounded-lg shadow-md">
+                                <h2>Skill 3</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit urna lectus, ornare vel odio eros luctus neque vulputate suscipit, parturient nisl quis himenaeos sociis laoreet auctor semper. Porttitor montes nec a class vulputate penatibus nibh, sociis himenaeos enim quam conubia vehicula, facilisi habitasse cubilia scelerisque tincidunt rutrum. Ut condimentum auctor himenaeos ullamcorper etiam nostra natoque nunc integer ante, sagittis laoreet conubia inceptos mollis magnis felis dapibus potenti at sociis, aptent porttitor viverra metus habitasse quam duis tempor praesent. Aptent parturient viverra per interdum curae est libero conubia integer risus eros, suspendisse dictumst vehicula lectus porta penatibus fusce himenaeos sapien nostra.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
     </body>
-    <footer>
-
-    </footer>
+    
 </html>
