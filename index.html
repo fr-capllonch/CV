@@ -30,13 +30,13 @@
                 <a>
                     <img src="logo.jpg" alt="Logo">
                 </a>
-                <div class="flex items-center gap-8">
+                <nav class="flex items-center gap-8">
                     <a>About Me</a>
                     <a>Skills</a>
                     <a>Projects</a>
                     <a>Certifications</a>
                     <a>Contact</a>
-                </div>
+                </nav>
             </div>
         </header>
         <main>
@@ -45,26 +45,41 @@
             </section>
             <section class="h-screen bg-[#F5F5F5]">
                 <div>
-                    <div class=" flex flex-col items-left justify-center gap-8 p-8">
+                    <div class=" flex flex-col justify-center gap-8 p-8">
                         <h1 class="font-family-roboto text-6xl font-bold">About Me</h1>
                     </div>
-                    <div class="grid grid-cols-2 items-left justify-center gap-12 p-8">
+                    <div class="grid grid-cols-2 justify-center gap-12 p-8">
                         <div>
-                            <img src="profile.jpg" alt="Profile Picture" class="rounded-full w-64 h-64 object-cover bg-[#E5E4E2] p-3 rounded-lg shadow-md">
+                            <div class="flex flex-row items-end gap-8">
+                                <img src="profile.jpg" alt="Profile Picture" 
+                                    class="w-48 h-48 rounded-lg object-cover bg-[#E5E4E2] p-2 shadow-lg "
+                                    alt = "Foto de perfil"                        
+                                >
+                                <div class="flex flex-col gap-2 text-center sm:text-left">
+                                    <h1 class="text-3xl font-bold tracking-tight text-slate-900">
+                                        Francesc Capllonch Massanet
+                                    </h1>
+                                    <p class="text-indigo-600 font-medium">CIFP Pau Casesnoves</p>
+                                    <p class="text-sm text-slate-500">20-04-2007</p>
+                                </div>
+                            </div>
+                            <article>
+                                    <p>I am a Student, currently studing Multiplaform Aplication Developing in Mallorca</p>
+                            </article>
                         </div>
-                        <div  class="flex flex-col items-left justify-center gap-8">
-                            <div id="targeta1" class="bg-[#E5E4E2] p-8 rounded-lg shadow-md">
+                        <div  class="flex flex-col justify-center gap-8">
+                            <article id="targeta1" class="bg-[#E5E4E2] p-8 rounded-lg shadow-md">
                                 <h2>Skill 1</h2>
                                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit urna lectus, ornare vel odio eros luctus neque vulputate suscipit, parturient nisl quis himenaeos sociis laoreet auctor semper. Porttitor montes nec a class vulputate penatibus nibh, sociis himenaeos enim quam conubia vehicula, facilisi habitasse cubilia scelerisque tincidunt rutrum. Ut condimentum auctor himenaeos ullamcorper etiam nostra natoque nunc integer ante, sagittis laoreet conubia inceptos mollis magnis felis dapibus potenti at sociis, aptent porttitor viverra metus habitasse quam duis tempor praesent. Aptent parturient viverra per interdum curae est libero conubia integer risus eros, suspendisse dictumst vehicula lectus porta penatibus fusce himenaeos sapien nostra.</p>
-                            </div>
-                            <div id="targeta2" class="bg-[#E5E4E2] p-8 rounded-lg shadow-md">
+                            </article>
+                            <article id="targeta2" class="bg-[#E5E4E2] p-8 rounded-lg shadow-md">
                                 <h2>Skill 2</h2>
                                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit urna lectus, ornare vel odio eros luctus neque vulputate suscipit, parturient nisl quis himenaeos sociis laoreet auctor semper. Porttitor montes nec a class vulputate penatibus nibh, sociis himenaeos enim quam conubia vehicula, facilisi habitasse cubilia scelerisque tincidunt rutrum. Ut condimentum auctor himenaeos ullamcorper etiam nostra natoque nunc integer ante, sagittis laoreet conubia inceptos mollis magnis felis dapibus potenti at sociis, aptent porttitor viverra metus habitasse quam duis tempor praesent. Aptent parturient viverra per interdum curae est libero conubia integer risus eros, suspendisse dictumst vehicula lectus porta penatibus fusce himenaeos sapien nostra.</p>
-                            </div>
-                            <div id="targeta3" class="bg-[#E5E4E2] p-8 rounded-lg shadow-md">
+                            </article>
+                            <article id="targeta3" class="bg-[#E5E4E2] p-8 rounded-lg shadow-md">
                                 <h2>Skill 3</h2>
                                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit urna lectus, ornare vel odio eros luctus neque vulputate suscipit, parturient nisl quis himenaeos sociis laoreet auctor semper. Porttitor montes nec a class vulputate penatibus nibh, sociis himenaeos enim quam conubia vehicula, facilisi habitasse cubilia scelerisque tincidunt rutrum. Ut condimentum auctor himenaeos ullamcorper etiam nostra natoque nunc integer ante, sagittis laoreet conubia inceptos mollis magnis felis dapibus potenti at sociis, aptent porttitor viverra metus habitasse quam duis tempor praesent. Aptent parturient viverra per interdum curae est libero conubia integer risus eros, suspendisse dictumst vehicula lectus porta penatibus fusce himenaeos sapien nostra.</p>
-                            </div>
+                            </article>
                         </div>
                     </div>
                 </div>
