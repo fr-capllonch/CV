@@ -5,7 +5,7 @@ let lastScrollY = window.scrollY;
 
 window.addEventListener('scroll', () => {
     const currentScrollY = window.scrollY;
-    if (currentScrollY > lastScrollY && currentScrollY > 100) {
+    if (currentScrollY > lastScrollY && currentScrollY > 20) {
         // Scrolling down
         header.style.transform = 'translateY(-100%)';
     } else {
