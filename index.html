@@ -7,16 +7,15 @@
         <script src="script.js" defer></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@450&family=Cultive+Mono:wght@400&family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">   
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">  
         <script src="https://cdn.tailwindcss.com"></script>
         <script>
             tailwind.config = {
                 theme: {
                 extend: {
             fontFamily: {
-                sans:    ['Inter', 'system-ui', 'sans-serif'],
+                sans:    ['"Roboto Mono"','Inter', 'system-ui', 'sans-serif'],
                 display: ['Playfair Display', 'Georgia', 'serif'],
-                roboto:  ['Roboto Mono'],
                     },
                 },
             },
@@ -40,8 +39,9 @@
             </div>
         </header>
         <main>
-            <section>
-                <h1 class="font-family-roboto grid place-items-center h-screen text-6xl font-bold">Welcome to my Portfolio!</h1>
+            <section class=" flex flex-col items-center justify-center text-center gap-3 h-screen pb-24">
+                    <h1 class=" text-6xl font-bold">Welcome to my Portfolio!</h1>
+                    <p class = " grid place-items-center text-2x1 text-slate-800">Scroll down to see information about me ;)</p>
             </section>
             <section class="h-screen bg-[#F5F5F5]">
                 <div>
@@ -134,6 +134,9 @@
                         </div>
                     </div>
                 </div>
+            </section>
+            <section class="h-screen bg-white">
+
             </section>
         </main>
     </body>

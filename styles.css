@@ -5,6 +5,7 @@
   margin: 40px auto;
   overflow: hidden; /* Oculta todo lo que queda fuera del marco */
   position: relative;
+  border-radius: 30px;
 }
 
 .slider::before,
