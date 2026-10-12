@@ -2,8 +2,9 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>My CV</title>
+        <title data-i18n="page.title" >My CV</title>
         <link rel="stylesheet" href="styles.css"></link>
+        <script src="translations.js" defer></script>
         <script src="script.js" defer></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,21 +28,29 @@
         <header id="header" class="sticky top-0 w-full right-0 z-50 transition-transform duration-300 translate-y-0 bg-white/50 backdrop-blur">
             <div class="mx-auto flex  justify-center p-4 shadow-lg">
                 <nav class="flex gap-8">
-                    <a href="#aboutMe">About Me</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
+                    <a href="#aboutMe" data-i18n="nav.about">About Me</a>
+                    <a href="#projects" data-i18n="nav.projects">Projects</a>
+                    <a href="#contact" data-i18n="nav.contact">Contact</a>
+                    <div class="flex gap-1 ml-6">
+                    <button data-lang="ca" aria-pressed="false"
+                            class="px-2 py-1 text-sm rounded-md transition aria-pressed:bg-indigo-600 aria-pressed:text-white hover:bg-slate-200">CA</button>
+                    <button data-lang="es" aria-pressed="false"
+                            class="px-2 py-1 text-sm rounded-md transition aria-pressed:bg-indigo-600 aria-pressed:text-white hover:bg-slate-200">ES</button>
+                    <button data-lang="en" aria-pressed="false"
+                            class="px-2 py-1 text-sm rounded-md transition aria-pressed:bg-indigo-600 aria-pressed:text-white hover:bg-slate-200">EN</button>
+                    </div>
                 </nav>
             </div>
         </header>
         <main>
             <section class=" flex flex-col items-center justify-center text-center gap-3 h-screen pb-24">
-                    <h1 class=" text-6xl font-bold">Welcome to my Portfolio!</h1>
-                    <p class = " grid place-items-center text-2xl text-slate-800">Scroll down to see information about me ;)</p>
+                    <h1 class=" text-6xl font-bold" data-i18n="hero.title">Welcome to my Portfolio!</h1>
+                    <p class = " grid place-items-center text-2xl text-slate-800" data-i18n="hero.subtitle">Scroll down to see information about me ;)</p>
             </section>
             <section id="aboutMe" class="min-h-screen bg-[#F5F5F5]">
                 <div>
                     <div class=" flex flex-col justify-center gap-8 p-8">
-                        <h1  class=" text-6xl font-bold">About Me</h1>
+                        <h1  class=" text-6xl font-bold" data-i18n="about.title">About Me</h1>
                     </div>
                     <div class="grid grid-cols-2 justify-center gap-12 p-8">
                         <div class="flex flex-col gap-2">
@@ -60,7 +69,7 @@
                                     <a href="https://www.linkedin.com/in/francesc-capllonch-massanet-62b5a2365/" class="mt-auto text-sm font-medium text-indigo-600 hover:text-indigo-500">LinkedIn</a>
                                 </div>
                             </div>
-                            <div class="text-slate-700 leading-relaxed">
+                            <div class="text-slate-700 leading-relaxed" data-i18n="about.text">
                                     <p>I am a Student, currently studing Multiplaform Aplication Development in Mallorca, 
                                     with a great desire in learning IT and programing. I do a lot of sports, most of them are realted
                                     with sailing but my favorite is Kitesurf. I've been more than 2 years being a Kitesurf instructor, 
@@ -70,29 +79,29 @@
                                 <h1 class="text-3xl font-bold tracking-tight text-slate-900 " >Skills</h1>
                                 <div class = "slider">
                                     <div class = "slide-track">
-                                        <div class ="slide">
+                                        <div class ="slide" data-i18n="skill.1">
                                             <p>Critical Thinking   </p>
                                         </div>
-                                        <div class ="slide">
+                                        <div class ="slide" data-i18n="skill.2">
                                             <p>Security Mindset</p>
                                         </div>
-                                        <div class ="slide">
+                                        <div class ="slide" data-i18n="skill.3">
                                             <p>Attention to detail</p>
                                         </div>
-                                        <div class ="slide">
+                                        <div class ="slide" data-i18n="skill.4">
                                             <p>Priority Management</p>
                                         </div>
 
-                                        <div class ="slide">
+                                        <div class ="slide" data-i18n="skill.1">
                                             <p>Critical Thinking   </p>
                                         </div>
-                                        <div class ="slide">
+                                        <div class ="slide" data-i18n="skill.2">
                                             <p>Security Mindset</p>
                                         </div>
-                                        <div class ="slide">
+                                        <div class ="slide" data-i18n="skill.3">
                                             <p>Attention to detail</p>
                                         </div>
-                                        <div class ="slide">
+                                        <div class ="slide" data-i18n="skill.4">
                                             <p>Priority Management</p>
                                         </div>
 
@@ -101,22 +110,22 @@
                                 </div>
                             </div>
                             <div>
-                                <h1 class="text-3xl font-bold tracking-tight text-slate-90"> Certifications and degrees</h1>
+                                <h1 class="text-3xl font-bold tracking-tight text-slate-90" data-i18n="certs.title"> Certifications and degrees</h1>
                                     
                                 <div class="pt-10">
                                     <ul class = "list-disc list-inside space-y-2">
-                                        <li>Technician in Microcomputer Systems and Networks - EQF Level 4</li>
-                                        <li>Introduction to Cisco Packet Tracer</li>
-                                        <li>Cisco Introduction to Cibersecurity</li>
+                                        <li data-i18n="cert.1">Technician in Microcomputer Systems and Networks - EQF Level 4</li>
+                                        <li data-i18n="cert.2">Introduction to Cisco Packet Tracer</li>
+                                        <li data-i18n="cert.3">Cisco Introduction to Cibersecurity</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="flex flex-col  gap-8">
-                            <h1 class = "text-3xl font-bold tracking-tight text-slate-90 text-center">IT & Programming Knowledge</h1>
+                            <h1 class = "text-3xl font-bold tracking-tight text-slate-90 text-center" data-i18n="knowledge.title">IT & Programming Knowledge</h1>
                             <article class="flex flex-col gap-5 bg-[#E5E4E2] p-6 rounded-lg shadow-md">
                                
-                                <p>
+                                <p data-i18n="knowledge.text">
                                     Hands-on experience in responsive web development using <strong>Tailwind CSS</strong>, 
                                     along with foundational knowledge of cross-platform apps using <strong>Flutter</strong>. 
                                     Skilled in designing and querying relational and NoSQL databases with <strong>MySQL</strong> and <strong>MongoDB</strong>, 
@@ -124,7 +133,7 @@
                                     
                                 </p>
 
-                                <div>
+                                <div data-i18n="knowledge.langs">
                                     <p>Programming Languages: Java, JavaScript, HTML, CSS, SQL</p>
                                 </div>
                                 
@@ -132,48 +141,48 @@
                                 
 
                             </article>
-                            <h2 class="text-3xl font-bold tracking-tight text-slate-900">Competences</h2>
+                            <h2 class="text-3xl font-bold tracking-tight text-slate-900" data-i18n="competences.title">Competences</h2>
                             <article class="grid grid-cols-1 sm:grid-cols-2 gap-6 bg-[#E5E4E2] p-6 rounded-lg shadow-md">
                                 
                                 <div class="flex items-start gap-3 p-3 bg-white/50 rounded-md border border-slate-300/50">
                                     <span class="w-2 h-2 mt-2 bg-slate-800 rounded-full flex-shrink-0"></span>
                                     <div>
-                                        <h3 class="font-semibold text-slate-900">Front-End Web Development</h3>
-                                        <p class="text-sm text-slate-600">Frontend UI layout </p>
+                                        <h3 class="font-semibold text-slate-900" data-i18n="comp.1.title" >Front-End Web Development</h3>
+                                        <p class="text-sm text-slate-600" data-i18n="comp.1.desc">Frontend UI layout </p>
                                     </div>
                                 </div>
 
                                 <div class="flex items-start gap-3 p-3 bg-white/50 rounded-md border border-slate-300/50">
                                     <span class="w-2 h-2 mt-2 bg-slate-800 rounded-full flex-shrink-0"></span>
                                     <div>
-                                        <h3 class="font-semibold text-slate-900">Database Management</h3>
-                                        <p class="text-sm text-slate-600">Relational (SQL) & NoSQL database design</p>
+                                        <h3 class="font-semibold text-slate-900" data-i18n="comp.2.title">Database Management</h3>
+                                        <p class="text-sm text-slate-600" data-i18n="comp.2.desc">Relational (SQL) & NoSQL database design</p>
                                     </div>
                                 </div>
 
                                 <div class="flex items-start gap-3 p-3 bg-white/50 rounded-md border border-slate-300/50">
                                     <span class="w-2 h-2 mt-2 bg-slate-800 rounded-full flex-shrink-0"></span>
                                     <div>
-                                        <h3 class="font-semibold text-slate-900">Security </h3>
-                                        <p class="text-sm text-slate-600">Basic security practices</p>
+                                        <h3 class="font-semibold text-slate-900" data-i18n="comp.3.title">Security </h3>
+                                        <p class="text-sm text-slate-600" data-i18n="comp.3.desc">Basic security practices</p>
                                     </div>
                                 </div>
 
                                 <div class="flex items-start gap-3 p-3 bg-white/50 rounded-md border border-slate-300/50">
                                     <span class="w-2 h-2 mt-2 bg-slate-800 rounded-full flex-shrink-0"></span>
                                     <div>
-                                        <h3 class="font-semibold text-slate-900">Version Control & Workflow</h3>
-                                        <p class="text-sm text-slate-600">Git, GitHub & team collaboration tools</p>
+                                        <h3 class="font-semibold text-slate-900" data-i18n="comp.4.title">Version Control & Workflow</h3>
+                                        <p class="text-sm text-slate-600" comp.4.desc>Git, GitHub & team collaboration tools</p>
                                     </div>
                                 </div>
 
                             </article>
-                            <h1 class="text-3xl font-bold tracking-tight text-slate-90 ">Languages </h1>
+                            <h1 class="text-3xl font-bold tracking-tight text-slate-90 " data-i18n="languages.title">Languages </h1>
                             <article class="bg-[#E5E4E2] p-6 rounded-lg shadow-md">
                                 <ul>
-                                    <li>English - Medium Level</li>
-                                    <li>Spanish - Native</li>
-                                    <li>Catalan - Native</li>
+                                    <li data-i18n="lang.en">English - Medium Level</li>
+                                    <li data-i18n="lang.es">Spanish - Native</li>
+                                    <li data-i18n="lang.ca">Catalan - Native</li>
                                 </ul>
 
                             </article>
@@ -184,7 +193,7 @@
             </section>
             <section id="projects" class="h-screen bg-white">
                 <div class=" flex flex-col justify-center gap-8 p-8">
-                        <h1  class=" text-6xl font-bold">Projects</h1>
+                        <h1  class=" text-6xl font-bold" data-i18n="projects.title">Projects</h1>
                 </div>
                 
                 <div class="grid gap-x-10 gap-y-14 sm:grid-cols-2 lg:grid-cols-3 p-20">
@@ -197,8 +206,8 @@
                                 class="aspect-[16/10] w-full object-cover transition duration-500 group-hover:scale-105"
                             >
                         </a>
-                        <h3 class="text-xl font-bold">ECO RIDE: dart example project</h3>
-                        <a href="https://github.com/fr-capllonch/practica_final_1_francesc_capllonch" class="mt-auto text-sm font-medium text-indigo-600 hover:text-indigo-500">
+                        <h3 class="text-xl font-bold" data-i18n="project.1.title">ECO RIDE: dart example project</h3>
+                        <a  href="https://github.com/fr-capllonch/practica_final_1_francesc_capllonch" class="mt-auto text-sm font-medium text-indigo-600 hover:text-indigo-500" data-i18n="projects.view">
                             Veure projecte
                             <span class="inline-block transition group-hover:translate-x-1">→</span>
                         </a>
@@ -213,8 +222,8 @@
                                 class="aspect-[16/10] w-full object-cover transition duration-500 group-hover:scale-105"
                             >
                         </a>
-                        <h3 class="text-xl font-bold">LOG FILTER (with java) </h3>
-                        <a href="https://github.com/fr-capllonch/PF1" class="mt-auto text-sm font-medium text-indigo-600 hover:text-indigo-500">
+                        <h3 class="text-xl font-bold" data-i18n="project.2.title">LOG FILTER (with java) </h3>
+                        <a href="https://github.com/fr-capllonch/PF1" class="mt-auto text-sm font-medium text-indigo-600 hover:text-indigo-500" data-i18n="projects.view">
                             Veure projecte
                             <span class="inline-block transition group-hover:translate-x-1">→</span>
                         </a>
@@ -229,8 +238,8 @@
                                 class="aspect-[16/10] w-full object-cover transition duration-500 group-hover:scale-105"
                             >
                         </a>
-                        <h3 class="text-xl font-bold">FLUTTER EXAMPLE</h3>
-                        <a href="https://github.com/fr-capllonch/Exercici1_Flutter" class="mt-auto text-sm font-medium text-indigo-600 hover:text-indigo-500">
+                        <h3 class="text-xl font-bold" data-i18n="project.3.title">FLUTTER EXAMPLE</h3>
+                        <a href="https://github.com/fr-capllonch/Exercici1_Flutter" class="mt-auto text-sm font-medium text-indigo-600 hover:text-indigo-500" data-i18n="projects.view">
                             Veure projecte
                             <span class="inline-block transition group-hover:translate-x-1">→</span>
                         </a>
@@ -241,10 +250,10 @@
             </section>
 
             <footer id="contact" class=" bg-[#F5F5F5]">
-                <h1 class=" text-4xl font-bold p-8">Contact</h1>
+                <h1 class=" text-4xl font-bold p-8" data-i18n="contact.title">Contact</h1>
                 <div class=" flex flex-row justify-between p-8">
                     
-                    <p>You can find my contact information here: </p>
+                    <p data-i18n="contact.intro">You can find my contact information here: </p>
                         <div class="flex flex-col">
                             <p>frcapllonch@outlook.com</p>
                             <a href="https://www.linkedin.com/public-profile/settings/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BVuDhBMrdQsGT4xw2zchqZg%3D%3D" class="mt-auto text-sm font-medium text-indigo-600 hover:text-indigo-500">LinkedIn</a>
