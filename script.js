@@ -17,7 +17,7 @@ window.addEventListener('scroll', () => {
 
 });
 
-const track = document.querySelector('.slide-track');
+const track = document.querySelector('.slider');
 
 window.addEventListener('load', () => {
   // Buscamos la animación del carrusel por su nombre en CSS (@keyframes scroll)
